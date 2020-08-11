@@ -69,8 +69,29 @@
 九、支付	
 	
 	
+#目录结构
+	manifest.json	配置文件:APPID、logo
+	pages.json		配置文件:导航 、tabbar、路由
+	main.js			Vue初始化文件
+	app.vue			全局配置：全局方法、全局监听
+	static			静态资源：图片、字体图标
 	
-	
+	pages			页面
+		index
+			index.vue
+		list
+			list.vue
+		myCenter
+			myCenter.vue
+
+	components   组件
+		index
+			banner.vue
+			Icons.vue
+		common
+			commodity.vue
+			
+	common		公共文件：全局的css文件			
 	
 	
 	
