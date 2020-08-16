@@ -10,13 +10,13 @@
 					"titleNView": {
 						"buttons": [{
 								"float": "right",
-								"fontSrc": "./static/iconfont.tff",
-								"text":"\ue617"
+								"fontSrc": "/static/iconfont.ttf",
+								"text": "\ue617"
 							},
 							{
 								"float": "left",
-								"fontSrc": "./static/iconfont.tff",
-								"text":"\ue606"
+								"fontSrc": "/static/iconfont.ttf",
+								"text": "\ue606"
 							}
 						]
 					}
@@ -32,7 +32,7 @@
 			"path": "pages/shopCar/shopCar",
 			"style": {}
 		}
-    ],
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "水达",
