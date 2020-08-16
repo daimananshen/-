@@ -1,7 +1,6 @@
 <template>
-	<view class="index">
-		<view class="f-active-color">文字</view>
-		<view class="iconfont icon-dkw_xiaoxi"></view>
+	<view>
+		
 	</view>
 </template>
 
@@ -9,11 +8,8 @@
 	export default {
 		data() {
 			return {
-			
-			}
-		},
-		onLoad() {
 
+			}
 		},
 		methods: {
 
@@ -22,5 +18,5 @@
 </script>
 
 <style>
-	
+
 </style>
