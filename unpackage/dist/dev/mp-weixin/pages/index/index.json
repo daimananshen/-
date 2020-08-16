@@ -2,5 +2,8 @@
   "navigationBarTitleText": "水达",
   "navigationBarTextStyle": "black",
   "navigationBarBackgroundColor": "#FFFFFF",
-  "usingComponents": {}
+  "usingComponents": {
+    "index-swiper": "/components/index/indexSwiper",
+    "recommend": "/components/recommend/recommend"
+  }
 }

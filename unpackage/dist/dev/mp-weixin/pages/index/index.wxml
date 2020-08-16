@@ -1,1 +1,1 @@
-<view></view>
+<view class="index data-v-57280228"><view class="wx-nav data-v-57280228"><view class="iconfont icon-sousuo data-v-57280228"></view><view class="iconfont icon-dkw_xiaoxi data-v-57280228"></view></view><index-swiper vue-id="8dd740cc-1" class="data-v-57280228" bind:__l="__l"></index-swiper><recommend vue-id="8dd740cc-2" class="data-v-57280228" bind:__l="__l"></recommend></view>

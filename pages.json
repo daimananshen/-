@@ -9,12 +9,12 @@
 				"app-plus": {
 					"titleNView": {
 						"buttons": [{
-								"float": "right",
+								"float": "left",
 								"fontSrc": "/static/iconfont.ttf",
 								"text": "\ue617"
 							},
 							{
-								"float": "left",
+								"float": "right",
 								"fontSrc": "/static/iconfont.ttf",
 								"text": "\ue606"
 							}
