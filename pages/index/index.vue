@@ -8,12 +8,18 @@
 		<!-- #endif -->
 		<IndexSwiper></IndexSwiper>
 		<Recommend></Recommend>
+		<!-- cardTitle可以定义不同的名称 -->
+		<Card cardTitle='猜你喜欢'></Card>
+		<CommodityList></CommodityList>
 	</view>
 </template>
 
 <script>
 	import IndexSwiper from '@/components/index/indexSwiper.vue'
 	import Recommend from '@/components/recommend/recommend.vue'
+	import Card from '@/components/common/Card.vue'
+	import Commodity from '@/components/common/Commodity.vue'
+	import CommodityList from '@/components/common/CommodityList.vue'
 	export default {
 		data() {
 			return {
@@ -22,7 +28,10 @@
 		},
 		components:{
 			IndexSwiper,
-			Recommend
+			Recommend,
+			Card,
+			Commodity,
+			CommodityList
 		},
 		methods: {
 

@@ -4,6 +4,9 @@
   "navigationBarBackgroundColor": "#FFFFFF",
   "usingComponents": {
     "index-swiper": "/components/index/indexSwiper",
-    "recommend": "/components/recommend/recommend"
+    "recommend": "/components/recommend/recommend",
+    "card": "/components/common/Card",
+    "commodity": "/components/common/Commodity",
+    "commodity-list": "/components/common/CommodityList"
   }
 }

@@ -135,7 +135,13 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var IndexSwiper = function IndexSwiper() {__webpack_require__.e(/*! require.ensure | components/index/indexSwiper */ "components/index/indexSwiper").then((function () {return resolve(__webpack_require__(/*! @/components/index/indexSwiper.vue */ 37));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var Recommend = function Recommend() {__webpack_require__.e(/*! require.ensure | components/recommend/recommend */ "components/recommend/recommend").then((function () {return resolve(__webpack_require__(/*! @/components/recommend/recommend.vue */ 44));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var IndexSwiper = function IndexSwiper() {__webpack_require__.e(/*! require.ensure | components/index/indexSwiper */ "components/index/indexSwiper").then((function () {return resolve(__webpack_require__(/*! @/components/index/indexSwiper.vue */ 37));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var Recommend = function Recommend() {__webpack_require__.e(/*! require.ensure | components/recommend/recommend */ "components/recommend/recommend").then((function () {return resolve(__webpack_require__(/*! @/components/recommend/recommend.vue */ 44));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var Card = function Card() {__webpack_require__.e(/*! require.ensure | components/common/Card */ "components/common/Card").then((function () {return resolve(__webpack_require__(/*! @/components/common/Card.vue */ 55));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var Commodity = function Commodity() {__webpack_require__.e(/*! require.ensure | components/common/Commodity */ "components/common/Commodity").then((function () {return resolve(__webpack_require__(/*! @/components/common/Commodity.vue */ 63));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var CommodityList = function CommodityList() {__webpack_require__.e(/*! require.ensure | components/common/CommodityList */ "components/common/CommodityList").then((function () {return resolve(__webpack_require__(/*! @/components/common/CommodityList.vue */ 70));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
+
+
+
+
 
 
 
@@ -159,7 +165,10 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
   },
   components: {
     IndexSwiper: IndexSwiper,
-    Recommend: Recommend },
+    Recommend: Recommend,
+    Card: Card,
+    Commodity: Commodity,
+    CommodityList: CommodityList },
 
   methods: {} };exports.default = _default;
 
