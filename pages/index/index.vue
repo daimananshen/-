@@ -6,11 +6,15 @@
 			<view class="iconfont icon-dkw_xiaoxi"></view>
 		</view>
 		<!-- #endif -->
+		<Banner></Banner>
+		<Icons></Icons>
 		<IndexSwiper></IndexSwiper>
 		<Recommend></Recommend>
 		<!-- cardTitle可以定义不同的名称 -->
 		<Card cardTitle='猜你喜欢'></Card>
 		<CommodityList></CommodityList>
+		<Card cardTitle='热销爆品'></Card>
+		<Hot></Hot>
 	</view>
 </template>
 
@@ -20,18 +24,24 @@
 	import Card from '@/components/common/Card.vue'
 	import Commodity from '@/components/common/Commodity.vue'
 	import CommodityList from '@/components/common/CommodityList.vue'
+	import Banner from '@/components/index/banner.vue'
+	import Icons from '@/components/index/icons.vue'
+	import Hot from '@/components/index/hot.vue'
 	export default {
 		data() {
 			return {
 
 			}
 		},
-		components:{
+		components: {
 			IndexSwiper,
 			Recommend,
 			Card,
 			Commodity,
-			CommodityList
+			CommodityList,
+			Banner,
+			Icons,
+			Hot
 		},
 		methods: {
 
