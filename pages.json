@@ -3,7 +3,7 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "水达商城",
+				"navigationBarTitleText": "水达",
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#FFFFFF",
 				"app-plus": {
