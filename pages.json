@@ -7,7 +7,7 @@
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#FFFFFF",
 				"app-plus": {
-					"scrollIndicator":"none",
+					"scrollIndicator": "none",
 					"titleNView": {
 						"buttons": [{
 								"float": "left",
@@ -32,6 +32,33 @@
 		}, {
 			"path": "pages/shopCar/shopCar",
 			"style": {}
+		},
+		{
+			"path": "pages/search/search",
+			"style": {
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"app-plus": {
+					"scrollIndicator": "none",
+					"titleNView": {
+						"searchInput": {
+							"placeholder": "nike",
+							"disabled": false,
+							"align": "left",
+							"autoFocus": true,
+							"borderRadius": "15px",
+							"backgroundColor": "#F7F7F7",
+							"placeholderColor": "#B3B3B3"
+						},
+						"buttons": [{
+							"float": "right",
+							"color": "#636263",
+							"text": "搜索",
+							"fontSize": "16px",
+							"width": "60px"
+						}]
+					}
+				}
+			}
 		}
 	],
 	"globalStyle": {

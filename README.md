@@ -1,6 +1,12 @@
 #本项目仅供参考
 
 #技术: uni-app + nodejs(或者 java)
+
+#我的简书地址: https://www.jianshu.com/u/6f7fce0d2a50
+
+#我的码云地址（好久未更新了）：https://gitee.com/daimananshen/dashboard/projects
+
+#我的CSDN地址：https://blog.csdn.net/weixin_39428080
  
 **项目分析 1.0版本**
 
@@ -103,6 +109,28 @@
 	
 #注意点
 	1、swiper组件不能取名swiper开头的，数据渲染过程中可能会导致图片消失。
+	
+	
+
+#后端  node.js	
+1、全局	安装express框架
+	npm install express-generator -g	
+2、进入项目目录运行命令   生成ejs模板的express文件
+	注：express 文件名 --view=ejs
+	express --view=ejs server
+3、进入server目录  
+	npm install
+4、启动后端命令   
+	注：如果http://localhost:3000/可以访问，则表示后端启动成功
+	npm start
+	
+	
+前端请求本地后端接口	
+1、手机跟电脑同一个WiFi
+2、本地接口不可以使用localhost地址，必须使用ip地址（ipconfig）	
+	
+	
+	
 	
 	
 	

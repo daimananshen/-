@@ -12,16 +12,15 @@
 			</view>
 		</scroll-view>
 		<swiper @change='onChangeTab' :current="topBarIndex" :style="'height:'+clentHeight+'px;'">
-			<swiper-item v-for='(item,index) in topBar' :key='index'>
+			<swiper-item v-for='(item,index) in newTopBar' :key='index'>
 				<view class='home-data'>
-					<Banner></Banner>
-					<Icons></Icons>
-					<Card cardTitle='热销爆品'></Card>
-					<Hot></Hot>
-					<Card cardTitle='推荐店铺'></Card>
-					<Shop></Shop>
-					<Card cardTitle='为您推荐'></Card>
-					<CommodityList></CommodityList>
+					<block v-for='(k,i) in item.data' :key='i'>
+						<template v-if='k.type==="recommendList"'>
+							<Recommend :dataList='k.data'></Recommend>
+							<Card cardTitle='猜你喜欢'></Card>
+						</template>
+						<CommodityList v-if='k.type==="commodityList"' :dataList='k.data'></CommodityList>
+					</block>
 				</view>
 			</swiper-item>
 		</swiper>
@@ -29,16 +28,16 @@
 		<!-- <Banner></Banner> -->
 		<!-- <Icons></Icons> -->
 		<!-- <IndexSwiper></IndexSwiper> -->
-		<!-- <Recommend></Recommend> -->
+		<Recommend></Recommend>
 		<!-- cardTitle可以定义不同的名称 -->
-		<!-- <Card cardTitle='猜你喜欢'></Card> -->
-		<!-- <CommodityList></CommodityList> -->
-		<!-- <Card cardTitle='热销爆品'></Card> -->
-		<!-- <Hot></Hot> -->
-		<!-- <Card cardTitle='推荐商铺'></Card> -->
-		<!-- <Shop></Shop> -->
-		<!-- <Card cardTitle='为您推荐'></Card> -->
-		<!-- <CommodityList></CommodityList> -->
+		<Card cardTitle='猜你喜欢'></Card>
+		<CommodityList></CommodityList>
+		<Card cardTitle='热销爆品'></Card>
+		<Hot></Hot>
+		<Card cardTitle='推荐商铺'></Card>
+		<Shop></Shop>
+		<Card cardTitle='为您推荐'></Card>
+		<CommodityList></CommodityList>
 	</view>
 </template>
 
@@ -62,28 +61,10 @@
 				//顶部滑动导航数据
 				//内容块的高度值
 				clentHeight: 0,
-				topBar: [{
-						name: '推荐'
-					},
-					{
-						name: '运动户外'
-					},
-					{
-						name: '服饰内衣'
-					},
-					{
-						name: '鞋靴箱包'
-					},
-					{
-						name: '美妆个护'
-					},
-					{
-						name: '家居数码'
-					},
-					{
-						name: '食品母婴'
-					}
-				]
+				//顶部导航栏数据
+				topBar: [],
+				//承载内容数据
+				newTopBar: []
 			}
 		},
 		components: {
@@ -97,15 +78,44 @@
 			Hot,
 			Shop
 		},
+		onLoad() {
+			this.__init();
+		},
 		onReady() {
 
 			let view = uni.createSelectorQuery().select(".home-data");
 			view.boundingClientRect(data => {
-				this.clentHeight = data.height;
+				this.clentHeight = 2000;
+				// this.clentHeight = data.height;
 			}).exec();
 
 		},
 		methods: {
+			__init() {
+				uni.request({
+					url: "http://192.168.1.9:3000/api/index_list/data",
+					success: (res) => {
+						let data = res.data.data;
+						this.topBar = data.topBar;
+						this.newTopBar = this.initData(data);
+					}
+				})
+			},
+			initData(res) {
+				let arr = [];
+				// 顶部导航栏，长度为7
+				for (let i = 0; i < this.topBar.length; i++) {
+					let obj = {
+						data: []
+					}
+					//获取首次数据
+					if (i == 0) {
+						obj.data = res.data;
+					}
+					arr.push(obj)
+				}
+				return arr;
+			},
 			changeTab(index) {
 				if (this.topBarIndex === index) {
 					return;
