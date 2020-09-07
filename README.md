@@ -1,6 +1,6 @@
 #本项目仅供参考
 
-#技术: uni-app + nodejs(或者 java)
+#技术: uni-app + nodejs
 
 #我的简书地址: https://www.jianshu.com/u/6f7fce0d2a50
 
