@@ -1,12 +1,15 @@
-#本项目仅供参考
+## 最近在写Java项目，暂停更新
 
-#技术: uni-app + nodejs
 
-#我的简书地址: https://www.jianshu.com/u/6f7fce0d2a50
+## 本项目仅供参考
 
-#我的码云地址（好久未更新了）：https://gitee.com/daimananshen/dashboard/projects
+## 技术: uni-app + nodejs
 
-#我的CSDN地址：https://blog.csdn.net/weixin_39428080
+## 我的简书地址: https://www.jianshu.com/u/6f7fce0d2a50
+
+## 我的码云地址（好久未更新了）：https://gitee.com/daimananshen/dashboard/projects
+
+## 我的CSDN地址：https://blog.csdn.net/weixin_39428080
  
 **项目分析 1.0版本**
 
